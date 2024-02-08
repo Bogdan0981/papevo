@@ -1,0 +1,41 @@
+.button-main
+    background: none
+    border: 1px solid $color-white
+    border-radius: .6rem
+    color: $color-white
+    transition: all .3s
+    font-size: 1.7rem
+    font-weight: 700
+    font-family: "Manrope"
+    padding: 1.5rem 2rem
+    &:focus
+        outline: none
+    &:hover
+        background: $color-white
+        color: $color-black
+        cursor: pointer
+    &:active
+        color: $color-white
+        background: none
+
+.button-pages
+    background: none
+    border: none
+    color: $color-blog-descr
+    font-size: 2.4rem
+    transition: all .3s
+    @media screen and ( max-width:  320px)
+        font-size: 1.4rem
+    i
+        font-size: 1.5rem
+        @media screen and ( max-width:  320px)
+            font-size: 1rem
+    &:focus
+        outline: none
+    &__active
+        color: $color-white
+    &:hover
+        cursor: pointer
+        color: $color-white
+    &:active
+        color: $color-blog-descr

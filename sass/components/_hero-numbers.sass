@@ -1,0 +1,24 @@
+.hero-numbers
+    display: flex
+    justify-content: space-between
+    font-family: "Manrope"
+    margin-bottom: 10rem
+    @media screen and ( max-width:  744px)
+        margin-bottom: 6rem
+        padding: 0 5rem
+    &-item
+        text-align: center
+        &-title
+            font-size: 5rem
+            color: $color-white
+            font-weight: 700
+            @media screen and ( max-width:  744px)
+                font-size: 4rem
+            @media screen and ( max-width:  320px)
+                font-size: 2.1rem
+        &-descr
+            font-weight: normal
+            color: $color-white-07
+            font-size: 1.9rem
+            @media screen and ( max-width:  320px)
+                font-size: 1.2rem

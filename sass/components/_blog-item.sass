@@ -1,0 +1,110 @@
+.blog-item
+    color: $color-white
+    font-family: "Manrope"
+    display: flex
+    justify-content: space-between
+    flex-direction: row-reverse
+    &:not(:last-child)
+        margin-bottom: 5rem
+    @media screen and ( max-width:  744px)
+        align-items: end
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:not(:last-child)
+            margin-bottom: 6rem
+    &-text
+        @media screen and ( max-width:  320px)
+            display: flex
+            flex-direction: column
+            align-items: start
+    &-img
+        @media screen and ( max-width:  744px)
+            width: 49rem
+            height: 31.8rem
+        @media screen and ( max-width:  320px)
+            width: 100%
+            height: 100%
+        img
+            @media screen and ( max-width:  744px)
+                width: 49rem
+                height: 31.8rem
+            @media screen and ( max-width:  320px)
+                width: 100%
+                height: 100%
+    &-name
+        font-size: 3.6rem
+        letter-spacing: -2px
+        line-height: 48px
+        font-weight: 700
+        margin-bottom: 2rem
+        @media screen and ( max-width:  320px)
+            font-size: 2rem
+            line-height: normal
+            letter-spacing: 0px
+            margin-bottom: .5rem
+            order: 2
+    &-titul
+        font-size: 1.4rem
+        font-weight: 500
+        margin-bottom: 3rem
+        @media screen and ( max-width:  320px)
+            font-size: 1rem
+            margin-bottom: 2rem
+            order: 3
+    &-descr
+        color: $color-blog-descr
+        font-size: 1.6rem
+        margin-bottom: 5rem
+        @media screen and ( max-width:  320px)
+            font-size: 1.4rem
+            margin-bottom: 2rem
+            order: 5
+            br
+                display: none
+    &-button
+        background: none
+        border: none
+        color: $color-white
+        font-size: 1.8rem
+        font-family: "Manrope"
+        font-weight: 800
+        transition: all .3s
+        @media screen and ( max-width:  320px)
+            display: block
+            order: 6
+            margin-bottom: 0
+        i
+            font-size: 1.3rem
+            transition: all .3s
+        &:focus
+            outline: none
+        &:hover
+            cursor: pointer
+            i
+                transform: rotate(-45deg)
+        &:active
+            i
+                transform: rotate(0)
+    &__head
+        flex-direction: row
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width:  744px)
+            display: flex
+            align-items: end
+            justify-content: space-between
+        @media screen and ( max-width:  320px)
+            flex-direction: column
+        &-img
+            @media screen and ( max-width:  744px)
+                width: 25.8rem
+                height: 18rem
+                display: block
+            @media screen and ( max-width:  320px)
+                order: 4
+                margin-bottom: 2rem
+            img
+                @media screen and ( max-width:  744px)
+                    width: 25.8rem
+                    height: 18rem

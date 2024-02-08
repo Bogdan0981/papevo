@@ -1,0 +1,161 @@
+.form
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    &-email
+        margin-right: 10.5rem
+        margin-bottom: 5rem
+        @media screen and ( max-width:  744px)
+            margin-right: 3.9rem
+            margin-bottom: 4rem
+        @media screen and ( max-width:  320px)
+            width: 100%
+            margin-bottom: 2.5rem
+        &-input
+            width: 31.8rem
+            background: none
+            border: none
+            border-bottom: 1px solid $color-white
+            padding-bottom: 2rem
+            font-family: "Space Grotesk"
+            font-weight: 400
+            font-size: 1.5rem
+            color: $color-white
+            transition: all .3s
+            margin-bottom: 3rem
+            @media screen and ( max-width:  744px)
+                width: 28.4rem
+                margin-bottom: 2rem
+            @media screen and ( max-width:  320px)
+                width: 100%
+                margin-bottom: 1rem
+            &::placeholder
+                color: $color-placeholders
+            &:focus
+                outline: none
+            &:hover
+                &::placeholder
+                    color: $color-white
+        &-buttons
+            display: flex
+            align-items: center
+        &-button
+            background: none
+            border: none
+            color: $color-placeholders
+            font-family: "Space Grotesk"
+            font-size: 2.1rem
+            transition: all .3s
+            &:not(:last-child)
+                margin-right: 3rem
+            &:focus
+                outline: none
+            &:hover
+                color: $color-white
+                cursor: pointer
+            &:active
+                color: $color-placeholders
+                @media screen and ( max-width:  320px)
+                    font-size: 1.4rem
+            &__active
+                color: $color-white 
+            &-label
+                display: flex
+                align-items: center
+                justify-content: center
+                background: none
+                border: 1px solid $color-placeholders
+                width: 1.8rem
+                height: 1.8rem
+                margin-right: 1rem
+                &__acitve
+                    border: 1px solid $color-red 
+                &-item
+                    border-radius: 50%
+                    background: $color-placeholders
+                    width: .6rem
+                    height: .6rem
+                    &__active
+                        background: $color-red 
+    &-tg
+        @media screen and ( max-width:  320px)
+            width: 100%
+            margin-bottom: 2.5rem
+        &-input
+            width: 31.8rem
+            background: none
+            border: none
+            border-bottom: 1px solid $color-white
+            padding-bottom: 2rem
+            font-family: "Space Grotesk"
+            font-weight: 400
+            font-size: 1.5rem
+            color: $color-white
+            transition: all .3s
+            margin-bottom: 3rem
+            display: none
+            @media screen and ( max-width:  320px)
+                width: 100%
+                margin-bottom: 1rem
+            &__active
+                display: block 
+            &::placeholder
+                color: $color-placeholders
+            &:focus
+                outline: none
+            &:hover
+                &::placeholder
+                    color: $color-white
+    &-name
+        margin-right: 10.5rem
+        margin-bottom: 5rem
+        @media screen and ( max-width:  744px)
+            margin-right: 0
+            margin-bottom: 4rem
+        @media screen and ( max-width:  320px)
+            width: 100%
+            margin-bottom: 2.5rem
+        &-input
+            @media screen and ( max-width:  744px)
+                width: 32rem
+            @media screen and ( max-width:  320px)
+                width: 100%
+                margin-bottom: 1rem
+    &-title
+        color: $color-white
+        font-family: "Space Grotesk"
+        font-size: 2.1rem
+        font-size: 1.4rem
+    &-question
+        @media screen and ( max-width:  744px)
+            margin-bottom: 5rem
+        @media screen and ( max-width:  320px)
+            width: 100%
+            margin-bottom: 3.5rem
+        &-input
+            margin-right: 13.9rem
+            width: 70rem 
+            @media screen and ( max-width:  744px)
+                margin-bottom: 3rem
+                width: 60rem
+                margin-right: 0
+            @media screen and ( max-width:  320px)
+                width: 100%
+                margin-bottom: 1rem
+            &::placeholder
+                white-space: pre-wrap
+    &-site
+        margin-bottom: 5rem
+        @media screen and ( max-width:  744px)
+            margin-bottom: 5rem
+        @media screen and ( max-width:  320px)
+            margin-bottom: 2.5rem
+            width: 100%
+        &-input
+            @media screen and ( max-width:  320px)
+                width: 100%
+    &-button
+        padding: 1.5rem 7.5rem
+        font-weight: 400
+        @media screen and ( max-width:  320px)
+            width: 100%

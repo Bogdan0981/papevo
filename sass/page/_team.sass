@@ -1,0 +1,115 @@
+.team-block
+    position: relative
+    padding: 0 12.5rem
+    @media screen and ( max-width:  744px)
+        padding: 0 4.4rem
+    @media screen and ( max-width:  320px)
+        padding: 0 3.2rem
+        margin-bottom: 5rem !important
+    &-title
+        position: absolute
+        right: 16rem
+        top: -20rem
+        @media screen and ( max-width:  744px)
+            right: 4rem
+            top: -15rem
+        @media screen and ( max-width:  320px)
+            right: 8rem
+            top: -5rem
+    &-descr
+        &:not(:last-child)
+            margin-bottom: 2rem
+        @media screen and ( max-width:  744px)
+            width: 54.9rem
+            br
+                display: none
+        @media screen and ( max-width:  320px)
+            font-size: 1.2rem
+            width: 25.6rem
+            &:not(:last-child)
+                margin-bottom: 1rem
+
+#teamRusTitle
+    font-size: 15rem
+    position: absolute
+    top: -10rem
+    right: 12rem
+    display: none
+    @media screen and ( max-width:  744px)
+        font-size: 13rem
+        left: 2rem
+        top: -9rem
+    @media screen and ( max-width:  320px)
+        font-size: 8rem
+        line-height: 90%
+        letter-spacing: 22%
+        left: 24rem
+        top: -4rem
+
+.values
+    padding: 0 16rem
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    @media screen and ( max-width:  744px)
+        padding: 0 3.6rem
+        align-items: center
+        justify-content: space-between
+    @media screen and ( max-width:  320px)
+        padding: 0 2.8rem
+        display: block
+    &-items
+        display: flex
+        flex-wrap: wrap
+        max-width: 52rem
+        @media screen and ( max-width:  744px)
+            display: block
+    &-text
+        position: relative
+    &-title
+        color: $color-white
+        font-family: "Manrope"
+        font-size: 6.4rem
+        font-weight: 800
+        height: 46rem
+        @media screen and ( max-width:  744px)
+            font-size: 5rem
+        @media screen and ( max-width:  320px)
+            font-size: 3rem
+            margin-bottom: 3rem
+            height: 16rem
+        &__rus
+            color: $color-white-016
+            font-weight: 800
+            font-size: 15rem
+            line-height: 86%
+            position: absolute
+            top: -30rem
+            display: none
+            @media screen and ( max-width:  744px)
+                font-size: 10rem
+                left: 0rem
+                top: 0rem
+            @media screen and ( max-width:  320px)
+                font-size: 4.7rem
+                top: -3rem
+            span
+                color: $color-white-016
+                font-weight: 800
+                font-size: 15rem
+                line-height: 86%
+                @media screen and ( max-width:  744px)
+                    font-size: 10rem
+                @media screen and ( max-width:  320px)
+                    font-size: 4.7rem
+        span
+            color: $color-white-016
+            font-size: 40rem
+            letter-spacing: -7rem
+            @media screen and ( max-width:  744px)
+                font-size: 30rem
+                letter-spacing: -5rem
+            @media screen and ( max-width:  320px)
+                font-size: 13rem
+                letter-spacing: -1.5rem
+                

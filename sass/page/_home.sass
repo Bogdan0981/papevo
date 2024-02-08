@@ -1,0 +1,171 @@
+.hero
+    padding: 0 13.5rem
+    @media screen and ( max-width:  744px)
+        padding: 0 1.5rem
+    @media screen and ( max-width:  320px)
+        padding: 0 3.6rem
+    &-text
+        text-align: center
+        margin-bottom: 10rem
+        @media screen and ( max-width:  744px)
+            margin-bottom: 5rem
+    &-clients
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width:  744px)
+            overflow-x: auto
+            &::-webkit-scrollbar
+                display: none
+            padding-left: 5rem
+        &-item
+            font-family: "Poppins"
+            color: $color-white
+            font-size: 2.4rem
+            font-weight: 500
+            @media screen and ( max-width:  744px)
+                font-size: 1.8rem
+                background: $color-hero-clients-mobile
+                padding: 1rem
+                &:not(:last-child)
+                    margin-right: 3rem
+            @media screen and ( max-width:  320px)
+                font-size: 1.2rem
+                &:not(:last-child)
+                    margin-right: 3rem
+
+.about
+    padding:  0 13.5rem
+    @media screen and ( max-width:  744px)
+        padding: 0 6.7rem
+    @media screen and ( max-width:  320px)
+        padding: 0 3rem
+    &-text
+        @media screen and ( max-width:  744px)
+            margin-bottom: 3rem
+    &-image
+        img
+            mix-blend-mode: luminosity
+            @media screen and ( max-width:  320px)
+                width: 100%
+                height: 100%
+
+.team
+    padding: 0 13.5rem
+    &-image
+        margin-right: 3.5rem
+        @media screen and ( max-width:  744px)
+            margin-right: 0
+        img
+            mix-blend-mode: luminosity
+            @media screen and ( max-width:  320px)
+                width: 100%
+                height: 100%
+    @media screen and ( max-width:  744px)
+        padding: 0 6.7rem
+        br
+            display: none
+    @media screen and ( max-width:  320px)
+        padding: 0 3rem
+    &-text
+        @media screen and ( max-width:  744px)
+            margin-bottom: 3rem
+
+.directions
+    padding: 0 13.5rem
+    @media screen and ( max-width:  744px)
+        padding: 0 5rem
+    @media screen and ( max-width:  320px)
+        padding: 0 3rem
+    &-text
+        margin-bottom: 4.8rem
+        @media screen and ( max-width:  744px)
+            margin-bottom: 4rem
+        @media screen and ( max-width:  320px)
+            margin-bottom: 3rem
+
+.customers
+    padding: 0 13.5rem
+    position: relative
+    margin-bottom: 50rem
+    @media screen and ( max-width:  744px)
+        padding: 0 5.3rem
+        margin-bottom: 120rem
+    @media screen and ( max-width:  320px)
+        padding: 0 2.7rem
+        margin-bottom: 50rem
+    &-title
+        font-size: 4rem
+        margin-bottom: 2rem
+        letter-spacing: -3px
+        @media screen and ( max-width:  744px)
+            font-size: 2.5rem
+            letter-spacing: 0
+        @media screen and ( max-width:  320px)
+            font-size: 2rem
+    &-descr
+        font-weight: 500
+        line-height: 3rem
+        letter-spacing: -2%
+        margin-bottom: 4rem
+        @media screen and ( max-width:  320px)
+            letter-spacing: 0
+
+/* Это относится к секции customers, а именно к заголовку */
+
+@media screen and ( max-width:  744px)
+    .br-dsk
+        display: none
+
+.br-mob
+    display: none
+    @media screen and ( max-width:  744px)
+        display: block
+
+.contacts
+    padding: 0 13.5rem
+    @media screen and ( max-width:  744px)
+        padding: 0 5rem
+    @media screen and ( max-width:  320px)
+        padding: 0 3rem
+    &-text
+        @media screen and ( max-width:  320px)
+            margin-bottom: 2.7rem
+
+.questions
+    padding: 0 13.5rem
+    display: flex
+    justify-content: space-between
+    @media screen and ( max-width:  744px)
+        padding: 0 3.5rem
+        display: block
+        br
+            display: none
+    @media screen and ( max-width:  320px)
+        padding: 0 3rem
+    &-items
+        margin-top: 10.7rem
+        @media screen and ( max-width:  744px)
+            margin-top: 3rem
+    &-text
+        &-button
+            background: none
+            border: 1px solid $color-white
+            font-family: "Manrope"
+            font-size: 1.5rem
+            padding: 0 1rem
+            color: $color-white
+            border-radius: .6rem
+            margin-left: 1rem
+            @media screen and ( max-width:  320px)
+                font-size: 1.5rem
+                margin-top: 1rem
+    &-descr
+        color: $color-questions-descr
+        font-size: 2.1rem
+        font-family: "Manrope"
+        @media screen and ( max-width:  744px)
+            width: 38.9rem
+        @media screen and ( max-width:  320px)
+            font-size: 1.2rem
+            width: 26rem
+    

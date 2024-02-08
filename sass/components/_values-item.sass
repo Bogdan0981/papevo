@@ -1,0 +1,38 @@
+.values-item
+    font-family: "Manrope"
+    @media screen and ( max-width:  744px)
+        margin-right: 0 !important
+        &:not(:last-child)
+            margin-bottom: 3rem !important
+    @media screen and ( max-width:  320px)
+        &:not(:last-child)
+            margin-bottom: 2rem !important
+    &:nth-child(1)
+        margin-right: 4.5rem
+        margin-bottom: 7.8rem
+    &:nth-child(2)
+        margin-bottom: 7.8rem
+    &:nth-child(3)
+        margin-right: 4.5rem
+    &-title
+        color: $color-white
+        font-size: 2.8rem
+        font-weight: 700
+        margin-bottom: .5rem
+        text-transform: uppercase
+        @media screen and ( max-width:  744px)
+            font-size: 2rem
+        @media screen and ( max-width:  320px)
+            font-size: 1.8rem
+    &-descr
+        color: $color-white
+        line-height: 206%
+        font-size: 1.6rem
+        @media screen and ( max-width:  744px)
+            font-size: 1.8rem
+        @media screen and ( max-width:  320px)
+            font-size: 1.4rem
+            letter-spacing: -1%
+            line-height: 127%
+            br
+                display: none

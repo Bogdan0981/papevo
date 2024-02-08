@@ -1,0 +1,21 @@
+.burger
+    display: none
+    @media screen and ( max-width:  744px)
+        display: block
+    &:hover
+        cursor: pointer
+    &:hover > &-item
+        width: 5rem
+    &:active > &-item
+        width: 6rem
+    &-item
+        width: 6rem
+        height: .1rem
+        background: $color-white
+        transition: all .3s
+        @media screen and ( max-width:  320px)
+            width: 3.6rem
+        &:hover
+            cursor: pointer
+        &:not(:last-child)
+            margin-bottom: 1rem

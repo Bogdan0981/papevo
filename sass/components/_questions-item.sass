@@ -1,0 +1,63 @@
+.questions-item
+    color: $color-white
+    font-family: "Manrope"
+    font-size: 1.9rem
+    padding-bottom: 2.2rem
+    border-bottom: 1px solid $color-white
+    transition: all .3s
+    transition: all .3s
+    &:hover i
+        transform: rotate(-45deg)
+    &:hover
+        cursor: pointer
+    &:active i
+        transform: rotate(0)
+    &:not(:last-child)
+        margin-bottom: 2.1rem
+    &-text
+        display: flex
+        justify-content: space-between
+        align-items: center
+        i
+            transition: all .3s
+    &-title
+        margin-right: 1.8rem
+        @media screen and ( max-width:  320px)
+            font-size: 1.4rem
+    &-descr
+        color: $color-questions-descr
+        font-size: 1.8rem
+        overflow: hidden
+        max-height: 0
+        visibility: hidden
+        opacity: 0
+        transition: opacity 2s ease-out, max-height 2s ease-out
+        @media screen and ( max-width:  320px)
+            font-size: 1.2rem
+        &-hide
+            max-height: 0 !important
+            transition: opacity 0.2s ease-out, max-height 0s 
+    &-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &:not(:last-child)
+            margin-bottom: 5rem
+        @media screen and ( max-width:  744px)
+            flex-direction: column
+            align-items: end
+            &:not(:last-child)
+                margin-bottom: 4rem
+    &__vacancises
+        width: 95rem
+        @media screen and ( max-width:  744px)
+            width: 100%
+        &-button
+            padding: 1.5rem 4.4rem
+            font-size: 2.1rem
+            @media screen and ( max-width:  744px)
+                font-size: 1.4rem
+                padding: 1rem 4.8rem
+            @media screen and ( max-width:  320px)
+                font-size: 1.2rem
+                padding: 1rem 5rem
