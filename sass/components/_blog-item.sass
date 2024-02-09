@@ -6,6 +6,17 @@
     flex-direction: row-reverse
     &:not(:last-child)
         margin-bottom: 5rem
+    &-container
+        display: block
+        &:hover
+            text-decoration: none
+        &:not(:last-child)
+            margin-bottom: 5rem 
+        @media screen and ( max-width:  744px)
+            &:not(:last-child)
+                margin-bottom: 6rem
+        @media screen and ( max-width:  320px)
+            margin-bottom: 3rem
     @media screen and ( max-width:  744px)
         align-items: end
         display: flex
@@ -70,6 +81,10 @@
         font-family: "Manrope"
         font-weight: 800
         transition: all .3s
+        a
+            color: $color-white
+            &:hover
+                text-decoration: none
         @media screen and ( max-width:  320px)
             display: block
             order: 6

@@ -271,6 +271,16 @@ label {
   font-family: "Manrope";
   padding: 1.5rem 2rem;
 }
+.button-main a {
+  color: #fff;
+}
+.button-main a:hover {
+  color: #141414;
+  text-decoration: none;
+}
+.button-main a:active {
+  color: #fff;
+}
 .button-main:focus {
   outline: none;
 }
@@ -1240,6 +1250,25 @@ label {
 .blog-item:not(:last-child) {
   margin-bottom: 5rem;
 }
+.blog-item-container {
+  display: block;
+}
+.blog-item-container:hover {
+  text-decoration: none;
+}
+.blog-item-container:not(:last-child) {
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 744px) {
+  .blog-item-container:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .blog-item-container {
+    margin-bottom: 3rem;
+  }
+}
 @media screen and (max-width: 744px) {
   .blog-item {
     align-items: end;
@@ -1333,6 +1362,12 @@ label {
   font-family: "Manrope";
   font-weight: 800;
   transition: all 0.3s;
+}
+.blog-item-button a {
+  color: #fff;
+}
+.blog-item-button a:hover {
+  text-decoration: none;
 }
 @media screen and (max-width: 320px) {
   .blog-item-button {
@@ -2032,6 +2067,9 @@ label {
   display: none;
   transition: all 0.3s;
 }
+.header-mobile-button a {
+  color: #808080;
+}
 .header-mobile-button:focus {
   outline: none;
 }
@@ -2063,6 +2101,17 @@ label {
   color: #808080;
   font-size: 1.2rem;
   transition: all 0.3s;
+}
+.header-button a {
+  transition: all 0.3s;
+  color: #808080;
+}
+.header-button a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.header-button a:active {
+  color: #808080;
 }
 @media screen and (max-width: 744px) {
   .header-button {
