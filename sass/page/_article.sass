@@ -1,0 +1,21 @@
+.article
+    &-more
+        padding: 0 13.5rem
+        @media screen and ( max-width:  744px)
+            padding: 0 4.7rem
+        @media screen and ( max-width:  320px)
+            padding: 0 2.9rem
+        &-title
+            color: $color-white
+            margin-bottom: 5rem
+            @media screen and ( max-width:  320px)
+                font-size: 2.5rem
+        &-items
+            display: flex
+            justify-content: space-between
+            border-bottom: 1px solid $color-descr-article-body
+            padding-bottom: 3rem
+            @media screen and ( max-width:  744px)
+                display: block
+            @media screen and ( max-width:  320px)
+                margin-bottom: 5rem !important

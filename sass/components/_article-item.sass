@@ -1,0 +1,128 @@
+.article-item
+    color: $color-white
+    font-family: "Manrope"
+    &-head
+        padding: 0 38.4rem
+        margin-bottom: 8rem
+        @media screen and ( max-width:  744px)
+            padding: 0 5rem
+            margin-bottom: 6rem
+        @media screen and ( max-width:  320px)
+            padding: 0 3rem
+            margin-bottom: 5rem
+        &-text
+            @media screen and ( max-width:  744px)
+                display: flex
+                align-items: end
+            @media screen and ( max-width:  320px)
+                display: block
+        &-name
+            display: flex
+            align-items: center
+            margin-bottom: 3.4rem
+            &-title
+                font-family: "Sen"
+                font-weight: 700
+                font-size: 2.8rem
+                letter-spacing: -1px
+                @media screen and ( max-width:  744px)
+                    font-size: 2rem
+                @media screen and ( max-width:  320px)
+                    font-size: 1.4rem
+                    margin-bottom: 1rem
+            &-date
+                color: $color-article-date
+                font-size: 1.6rem
+                @media screen and ( max-width:  744px)
+                    font-size: 1.4rem
+                @media screen and ( max-width:  320px)
+                    font-size: 1.2rem
+            img
+                margin-right: 1.6rem
+        &-title
+            font-size: 4.8rem
+            letter-spacing: -2px 
+            font-weight: 700
+            margin-bottom: 3rem
+            @media screen and ( max-width:  744px)
+                font-size: 3rem
+                letter-spacing: 0
+            @media screen and ( max-width:  320px)
+                font-size: 1.8rem
+        &-text
+            font-size: 2.4rem
+            font-weight: 700
+            @media screen and ( max-width:  744px)
+                padding-bottom: 3rem
+                font-size: 1.8rem
+            @media screen and ( max-width:  320px)
+                padding: 0
+                font-size: 1.2rem
+    &-body
+        padding: 0 13.5rem
+        @media screen and ( max-width:  744px)
+            padding: 0 5rem
+        @media screen and ( max-width:  320px)
+            padding: 0 3rem
+        &-img
+            margin-bottom: 8rem
+            @media screen and ( max-width:  744px)
+                width: 100%
+                height: 100%
+                margin-bottom: 4rem
+                img
+                    width: 100%
+                    height: 100%
+            @media screen and ( max-width:  320px)
+                margin-bottom: 3rem
+        &-text
+            display: flex
+            justify-content: space-between
+            &__top
+                margin-bottom: 5rem
+                @media screen and ( max-width:  744px)
+                    display: block !important
+            &__bottom
+                padding: 0 17.5rem
+                @media screen and ( max-width:  744px)
+                    padding: 0
+            &-block
+                border-bottom: 1px solid $color-article-date
+                width: 45%
+                padding-bottom: 1.8rem
+                @media screen and ( max-width:  744px)
+                    width: 100%
+                    &:not(:last-child)
+                        margin-bottom: 4rem
+                @media screen and ( max-width:  320px)
+                    &:not(:last-child)
+                        margin-bottom: 2rem
+                &-list
+                    margin-bottom: 2rem
+                    padding: 0 1rem
+                    @media screen and ( max-width:  320px)
+                        margin-bottom: 1rem
+                    &-item
+                        font-weight: 700
+                        font-size: 2.4rem
+                        @media screen and ( max-width:  744px)
+                            font-size: 1.8rem
+                        @media screen and ( max-width:  320px)
+                            font-size: 1.4rem
+                &-title
+                    font-weight: 700
+                    font-size: 3.6rem
+                    margin-bottom: 2rem
+                    @media screen and ( max-width:  744px)
+                        font-size: 2.5rem
+                    @media screen and ( max-width:  320px)
+                        font-size: 1.8rem
+                        margin-bottom: 1rem
+                &-descr
+                    color: $color-descr-article-body
+                    font-size: 1.6rem
+                    @media screen and ( max-width:  320px)
+                        font-size: 1.2rem
+            &__top
+                display: flex
+                justify-content: space-between
